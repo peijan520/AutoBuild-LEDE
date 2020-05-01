@@ -5,7 +5,7 @@
 # Youtube Channel: https://goo.gl/fvkdwm 
 #=================================================
 
-name: Build_x86
+name: Build_x86-32
 
 on: 
   release:
@@ -18,8 +18,8 @@ on:
   #schedule:
   #  - cron: 0 8 * * 5
 
-  #watch:
-  #  types: [started]
+  watch:
+    types: [started]
 
 jobs:
   build:
@@ -76,7 +76,7 @@ jobs:
     #    git clone https://github.com/Lienol/openwrt-package package/lienol
     #    git clone "your_github_link" package/"your_folder_name"      
 
-    - name: Configuration Customization - Build_x86
+    - name: Configuration Customization - Build_x86-32
       env:
         CONFIG_FILE: 'x86.config'
       run: |
