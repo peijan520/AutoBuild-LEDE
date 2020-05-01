@@ -5,7 +5,7 @@
 # Youtube Channel: https://goo.gl/fvkdwm 
 #=================================================
 
-name: Build_x86
+name: Build_x32
 
 on: 
   release:
@@ -76,7 +76,7 @@ jobs:
     #    git clone https://github.com/Lienol/openwrt-package package/lienol
     #    git clone "your_github_link" package/"your_folder_name"      
 
-    - name: Configuration Customization - Build_32
+    - name: Configuration Customization - Build_x32
       env:
         CONFIG_FILE: 'op32.config'
       run: |
